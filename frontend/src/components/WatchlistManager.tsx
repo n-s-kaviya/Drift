@@ -160,19 +160,20 @@ export function WatchlistManager({
         {error && <p className="text-sm text-[var(--destructive)]">{error}</p>}
 
         {!isSearching && (
-          <div className="flex gap-1.5 overflow-x-auto pb-0.5">
+          <div className="grid grid-cols-3 gap-1.5 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7">
             {STOCK_CATEGORIES.map((cat) => (
               <button
                 key={cat.id}
                 type="button"
                 onClick={() => setActiveCategory(cat.id)}
-                className={`shrink-0 rounded-full border px-3 py-1 text-xs font-medium whitespace-nowrap transition-colors ${
+                className={`rounded-lg border px-2 py-1.5 text-xs font-medium leading-tight transition-colors ${
                   activeCategory === cat.id
                     ? "border-[var(--primary)] bg-indigo-50 text-indigo-900"
                     : "border-[var(--border)] hover:bg-[var(--muted)]"
                 }`}
               >
-                {cat.icon} {cat.name}
+                <span className="mr-0.5">{cat.icon}</span>
+                {cat.name}
               </button>
             ))}
           </div>
