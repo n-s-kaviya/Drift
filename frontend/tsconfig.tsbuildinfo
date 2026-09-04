@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/authform.tsx","./src/components/marketpanels.tsx","./src/components/refreshsettings.tsx","./src/components/stockdetailmodal.tsx","./src/components/watchlistmanager.tsx","./src/lib/api.ts","./src/lib/auth.ts","./src/lib/refreshsettings.ts","./src/lib/stocksuggestions.ts"],"version":"5.7.3"}
